@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "singularName": "comment",
+    "pluralName": "comments",
+    "displayName": "comment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "drinkId": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "rating": {
+      "type": "integer",
+      "max": 5,
+      "min": 1,
+      "required": true
+    }
+  }
+}
